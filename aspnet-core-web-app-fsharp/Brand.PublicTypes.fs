@@ -1,11 +1,9 @@
-﻿namespace aspnet_core_web_app_fsharp
+﻿namespace Brand.PublicTypes
 
 open System
 
-
 // ------------------------------------
 // error outputs 
-
 
 /// All the things that can go wrong in this workflow
 type ValidationError = ValidationError of string
@@ -41,7 +39,7 @@ type CreateBrandError =
 /// Not all events will occur, depending on the logic of the workflow
 type CreateBrandEvent = 
     | BrandCreated of BrandCreated
-
+    
 
 // ------------------------------------
 // the workflow itself

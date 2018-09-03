@@ -2,6 +2,7 @@
 
 open System 
 open System.Collections
+open Brand.PublicTypes
 
 
 // ==================================
@@ -26,7 +27,6 @@ type BrandDto = {
 }
 
 module internal BrandDto =
-    open aspnet_core_web_app_fsharp
 
     /// Convert the Brand into a UnvalidatedBrand
     /// This always succeeds because there is no validation. 
@@ -36,6 +36,15 @@ module internal BrandDto =
         BrandName = dto.Name 
         }
   
+    /// Convert a ShippableOrderPlaced object into the corresponding DTO.
+    /// Used when exporting from the domain to the outside world.
+    let fromDomain (domainObj:BrandCreated) :BrandDto = 
+        {
+        Id = domainObj.BrandId
+        Name = domainObj.BrandName
+        }
+
+
 /// Use a dictionary representation of a PlaceOrderEvent, suitable for JSON
 /// See "Serializing Records and Choice Types Using Maps" in chapter 11
 type CreateBrandEventDto = IDictionary<string,obj> 

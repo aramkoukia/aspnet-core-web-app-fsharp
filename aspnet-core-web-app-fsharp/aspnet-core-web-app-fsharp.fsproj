@@ -5,11 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Brand.Dto.fs" />
-    <Compile Include="Common.SimpleTypes.fs" />
     <Compile Include="Result.fs" />
-    <Compile Include="Brand.Implementation.fs" />
+    <Compile Include="Common.SimpleTypes.fs" />
+    <Compile Include="Common.CompoundTypes.fs" />
     <Compile Include="Brand.PublicTypes.fs" />
+    <Compile Include="Brand.InternalTypes.fs" />
+    <Compile Include="Brand.Implementation.fs" />
+    <Compile Include="Brand.Dto.fs" />
     <Compile Include="Controllers\BrandsController.fs" />
     <Compile Include="Controllers/ValuesController.fs" />
     <Compile Include="Startup.fs" />
