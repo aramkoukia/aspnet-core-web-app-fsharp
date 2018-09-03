@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Brand.Dto.fs" />
+    <Compile Include="Common.SimpleTypes.fs" />
+    <Compile Include="Result.fs" />
+    <Compile Include="Brand.Implementation.fs" />
+    <Compile Include="Brand.PublicTypes.fs" />
+    <Compile Include="Controllers\BrandsController.fs" />
+    <Compile Include="Controllers/ValuesController.fs" />
+    <Compile Include="Startup.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dto\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" />
+  </ItemGroup>
+
+</Project>
