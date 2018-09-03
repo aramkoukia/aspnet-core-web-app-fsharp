@@ -7,7 +7,7 @@ open Common.SimpleTypes
 let createBrandEvent (createdBrand:CreatedBrand) : BrandCreated =
     {
     BrandId = createdBrand.BrandId 
-    BrandName = createdBrand.BrandName
+    BrandName = createdBrand.BrandName |> String50.value
     } 
 
 /// helper to convert an Option into a List

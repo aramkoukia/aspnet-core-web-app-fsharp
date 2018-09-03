@@ -1,9 +1,8 @@
-﻿module Brand
+﻿namespace Brand
 
-open System 
-open System.Collections
+open System
 open Brand.PublicTypes
-
+open System.Collections.Generic
 
 // ==================================
 // DTOs for CreateBrand workflow

@@ -2,9 +2,10 @@
 
 open Common.SimpleTypes
 open Brand.PublicTypes
+open System
 
 type CreatedBrand = {
-    BrandId : BrandId
+    BrandId : Guid
     BrandName : String50
     }
 
